@@ -46,7 +46,7 @@ The code folder in this repository contains a copy of the Technigo React Starter
 
 Your company has an example store created in Tictail. You can access the administration interface for the store here: https://tictail.com/dashboard. Your login credentials are below. Also make a note of the store ID - you'll need to use this when using the API.
 
-Username: technigo_red@tictail.com<br>
+Username: technigo_blue@tictail.com<br>
 Password: technigo<br>
 Store ID: Tictail will help you find this! :)
 
