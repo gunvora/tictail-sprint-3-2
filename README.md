@@ -48,7 +48,7 @@ Your company has an example store created in Tictail. You can access the adminis
 
 Username: technigo_blue@tictail.com<br>
 Password: technigo<br>
-Store ID: Tictail will help you find this! :)
+Store ID: 5HSP
 
 There you’ll be able to [view products](https://tictail.com/dashboard/products), create/update products and change navigation (categories), as well as [update general store information](https://tictail.com/dashboard/settings/general). The shops contain example products in three categories (art, watches and chairs) but feel free to change if you’d rather have other products or categories. In fact, feel free to change anything about these shops - they’re created only for this purpose, and they’re easy to recreate if anything breaks.
 
