@@ -1,0 +1,10 @@
+.container {
+max-width: 920px;
+width: 100%;
+margin: 0 auto;
+background-color: orange;
+}
+
+.main {
+  display: flex;
+}

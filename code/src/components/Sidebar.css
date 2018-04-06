@@ -1,0 +1,10 @@
+.sidebar {
+  background-color: red;
+  width: 20%;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
