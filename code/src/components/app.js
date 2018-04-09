@@ -2,6 +2,7 @@ import React from "react"
 import Products from "./Products"
 import "./app.css"
 import Sidebar from "./Sidebar"
+import Header from "./Header"
 
 class App extends React.Component {
   constructor(props) {
@@ -53,14 +54,18 @@ return (
   render() {
     console.log(this.state)
     if (!this.state.store) return null
+    console.log("hej" + this.state.products.lenght)
+    //test att få fram antal produkter
 
     return (
+      <div>
       <div className="container">
-        {this.state.store.name}
+      <h1>{this.state.store.name}</h1>
         <div className="main">
         {this.renderCategories(this.state.categories)}
         <Products products={this.state.products} filtered={this.state.filtered}/>
         </div>
+      </div>
       </div>
     )
   }

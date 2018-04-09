@@ -2,9 +2,10 @@
 max-width: 920px;
 width: 100%;
 margin: 0 auto;
-background-color: orange;
+background-color: white;
 }
 
 .main {
   display: flex;
+  margin: 50px;
 }

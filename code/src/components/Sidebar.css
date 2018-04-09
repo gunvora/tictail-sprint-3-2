@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: red;
+  background-color: white;
   width: 20%;
 }
 
@@ -7,4 +7,9 @@
 .products {
   display: flex;
   flex-wrap: wrap;
+}
+
+.sidebar div {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
