@@ -1,0 +1,29 @@
+.header-title {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.header-title img {
+  height: 40px;
+  margin-top: 20px;
+  width: auto;
+}
+
+.header-title h1 {
+  margin-left: 20px;
+}
+
+.header-categories {
+  border-style: solid;
+  margin-left: 20px;
+  width: 15%;
+  background-color: pink;
+}
+
+.header-categories a {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  text-decoration: none;
+}
