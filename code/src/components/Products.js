@@ -37,7 +37,9 @@ export default class Products extends React.Component {
     })
     return (
       <div>
-        <div>{products.length}</div>
+        <div className="products-amount-of-items-shown">
+          &#9472; Now showing {products.length} items from store &#9472;
+        </div>
         <div className="products">{products}</div>
       </div>
     )

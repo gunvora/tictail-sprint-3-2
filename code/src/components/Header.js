@@ -29,12 +29,13 @@ export default class Header extends React.Component {
   renderCategories = () => {
   const cat = this.state.categories.map((category) => {
     return (
-      <Link to={`/category/${category.slug}`}> {category.title}</Link>)
+        <div className="header-category"><Link to={`/category/${category.slug}`}> {category.title}</Link></div>
+    )
   } )
   return (
-  <div>
-    <Link to="/">All products</Link>
-    {cat}
+    <div className="header-container-for-header-category">
+      {cat}
+      <Link className="header-category" to="/">Show all</Link>
     </div>
   )
   }
@@ -48,13 +49,14 @@ render() {
     storeName="Loading..."
   }
   return (
-    <div>
-      <div className="header-title">
-        <img src={logo} alt="Technigo logo" />
-        <h1>{storeName}</h1>
+    <div className="header-container-for-all-containers">
+      <div className="header-container-for-header-title">
+        <h1 className="header-title">
+          {storeName}
+        </h1>
       </div>
-      <div className="header-categories">
-        <p>{this.renderCategories()}</p>
+      <div className="header-container-for-container-for-header-category">
+        {this.renderCategories()}
       </div>
     </div>
   )
