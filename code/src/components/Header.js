@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Products"
 import "./Header.css"
+import logo from "./images/logo.svg"
 
 export default class Header extends React.Component {
 
@@ -31,8 +32,8 @@ export default class Header extends React.Component {
       <Link to={`/category/${category.slug}`}> {category.title}</Link>)
   } )
   return (
-  <div className="sidebar">
-    <Link to="/">All Products</Link>
+  <div>
+    <Link to="/">All products</Link>
     {cat}
     </div>
   )
@@ -48,8 +49,13 @@ render() {
   }
   return (
     <div>
-    {storeName}
-    {this.renderCategories()}
+      <div className="header-title">
+        <img src={logo} alt="Technigo logo" />
+        <h1>{storeName}</h1>
+      </div>
+      <div className="header-categories">
+        <p>{this.renderCategories()}</p>
+      </div>
     </div>
   )
 }
