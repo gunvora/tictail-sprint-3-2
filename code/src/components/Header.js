@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./Products"
 import "./Header.css"
 
@@ -27,11 +28,7 @@ export default class Header extends React.Component {
   renderCategories = () => {
   const cat = this.state.categories.map((category) => {
     return (
-      <div
-      onClick={() => {
-        this.setState({filtered: category.title})
-      }}
-      >{category.title}</div>)
+      <Link to={`category/${category.slug}`}> {category.title}</Link>)
   } )
   return (
   <div className="sidebar">
@@ -45,8 +42,16 @@ export default class Header extends React.Component {
 
 
 render() {
+  console.log(this.state.store)
+  let storeName="namn"
+  if (this.state.store){
+    storeName=this.state.store.name
+  } else {
+    storeName="Loading..."
+  }
   return (
     <div>
+    {storeName}
     {this.renderCategories()}
     </div>
 

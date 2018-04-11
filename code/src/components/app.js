@@ -26,6 +26,7 @@ class App extends React.Component {
 
       <Route exact path="/products" component={Store} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/category/:whatevername" component={Products} />
 
 
       </div>
