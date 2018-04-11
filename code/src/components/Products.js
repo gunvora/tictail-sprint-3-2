@@ -3,10 +3,34 @@ import Product from "./Product"
 import "./Products.css"
 
 export default class Products extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = { products: [] }
+  }
+
+  componentDidMount() {
+    fetch("https://api.tictail.com/v1.25/stores/5HSP/products")
+      .then(resp => {
+        return resp.json();
+      }).then(json => {
+      this.setState({products: json});
+    })
+  }
+
   render() {
-    const products = this.props.products.filter((product) => {
-      if (!this.props.filtered) return true
-      if (this.props.filtered === product.categories[0].title) return true
+
+    console.log(this.props)
+    const categoryName = this.props.match.params.whatevername
+    console.log(categoryName)
+
+    const products = this.state.products.filter((product) => {
+
+
+      const categoryTitle = product.categories[0].slug
+
+      if (!categoryName) return true
+      if (categoryName === categoryTitle) return true
       return false
     }).map((product) => {
       return <Product product={product}/>

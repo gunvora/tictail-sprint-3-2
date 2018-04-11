@@ -28,18 +28,16 @@ export default class Header extends React.Component {
   renderCategories = () => {
   const cat = this.state.categories.map((category) => {
     return (
-      <Link to={`category/${category.slug}`}> {category.title}</Link>)
+      <Link to={`/category/${category.slug}`}> {category.title}</Link>)
   } )
   return (
   <div className="sidebar">
-    <div onClick={() => {
-      this.setState({filtered: null})
-    }}>all</div>
+    <Link to="/">All Products</Link>
     {cat}
     </div>
   )
   }
-  
+
 render() {
   console.log(this.state.store)
   let storeName="namn"

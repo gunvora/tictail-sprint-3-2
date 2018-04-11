@@ -9,7 +9,6 @@ import About from "./About"
 
 class App extends React.Component {
 
-
   render() {
     return (
       <Router>
@@ -17,6 +16,7 @@ class App extends React.Component {
           <Header />
           <Route exact path="/products" component={Store} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/" component={Products} />
           <Route exact path="/category/:whatevername" component={Products} />
         </div>
       </Router>
