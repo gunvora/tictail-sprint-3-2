@@ -29,7 +29,14 @@
 }
 
 .header-category {
+  padding: 4px 7px 4px 7px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
 
+.header-category:hover {
+  background-color: rgba(211, 211, 211, 0.3);
 }
 
 .header-container-for-header-category a:link {
