@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar"
 import Header from "./Header"
 import Store from "./Store"
 import About from "./About"
+import Productdetail from "./Productdetail"
 
 class App extends React.Component {
 
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/" component={Products} />
           <Route exact path="/category/:whatevername" component={Products} />
+          <Route exact path="/productpage/:productId" component={Productdetail} />
         </div>
       </Router>
     )
