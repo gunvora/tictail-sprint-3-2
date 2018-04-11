@@ -11,30 +11,17 @@ class App extends React.Component {
 
 
   render() {
-
-
     return (
-
       <Router>
-
         <div>
-
-      <Header />
-
-
-
-
-      <Route exact path="/products" component={Store} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/category/:whatevername" component={Products} />
-
-
-      </div>
-
+          <Header />
+          <Route exact path="/products" component={Store} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/category/:whatevername" component={Products} />
+        </div>
       </Router>
     )
   }
-
 }
 
 export default App

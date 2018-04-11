@@ -39,8 +39,7 @@ export default class Header extends React.Component {
     </div>
   )
   }
-
-
+  
 render() {
   console.log(this.state.store)
   let storeName="namn"
@@ -54,7 +53,6 @@ render() {
     {storeName}
     {this.renderCategories()}
     </div>
-
   )
 }
 }
