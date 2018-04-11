@@ -36,9 +36,9 @@ export default class Products extends React.Component {
       return <Product product={product}/>
     })
     return (
-      <div className="products">
-      <div>{products.length}</div>
-      <div>{products}</div>
+      <div>
+        <div>{products.length}</div>
+        <div className="products">{products}</div>
       </div>
     )
   }
