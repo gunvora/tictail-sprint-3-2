@@ -3,11 +3,13 @@
 }
 
 .product {
-  width: 40%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #f2f2f2;
   border-radius: 10px;
   margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -54,10 +56,12 @@
 
 @media (min-width: 400px) {
   .product {
-    width: 25%;
+    width: calc(33% - 30px);
     padding: 20px;
     border: 1px solid #f2f2f2;
     border-radius: 10px;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
