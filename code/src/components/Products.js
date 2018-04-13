@@ -25,10 +25,7 @@ export default class Products extends React.Component {
     console.log(categoryName)
 
     const products = this.state.products.filter((product) => {
-
-
       const categoryTitle = product.categories[0].slug
-
       if (!categoryName) return true
       if (categoryName === categoryTitle) return true
       return false
