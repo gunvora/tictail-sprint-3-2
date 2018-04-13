@@ -43,6 +43,12 @@ export default class Header extends React.Component {
   }
 
 render() {
+    /* Använd const istället för let och koppla loadern till en egen variabel eller funktion
+      Skulle kunna se ut såhär:
+     return (
+      !this.state.storeName ? this.renderLoader() : this.state.storeName
+     )
+    */
   let storeName="namn"
   if (this.state.storeName){
     storeName=this.state.storeName

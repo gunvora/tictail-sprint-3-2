@@ -25,6 +25,7 @@ export default class Productdetail extends React.Component {
   }
 
 onClickBuy = () => {
+    // Best practice är att döpa propen till samma sak som funktionen
   this.props.appComponentFunction()
 }
 
