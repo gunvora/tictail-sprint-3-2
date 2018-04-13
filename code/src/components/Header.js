@@ -38,7 +38,6 @@ export default class Header extends React.Component {
       <div className="header-container-for-header-category">
         {cat}
         <Link className="header-category" to="/">Show all</Link>
-        <Link className="header-category" to="/about">About</Link>
       </div>
     )
   }
