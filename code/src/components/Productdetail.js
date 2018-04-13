@@ -12,8 +12,9 @@ export default class Productdetail extends React.Component {
 
   componentDidMount() {
 
-    const productId = this.props.match.params.productId
+    const productId = this.props.match.params.productid
     console.log(productId)
+    console.log(this.props)
 
     fetch(`https://api.tictail.com/v1.25/stores/5HSP/products/${productId}`)
       .then(resp => {
@@ -23,11 +24,15 @@ export default class Productdetail extends React.Component {
     })
   }
 
+onClickBuy = () => {
+  this.props.appComponentFunction()
+}
+
 render() {
   console.log(this.state)
 
   if (!this.state.product){
-    return null
+    return "Loading..."
   }
   return (
     <div className="product-detail-container-for-page">
@@ -44,7 +49,8 @@ render() {
             <div className="product-detail-container-for-price-and-button">
               <div className="product-detail-price">{this.state.product.price/100} &nbsp;
                                                     {this.state.product.currency} &nbsp; </div>
-              <div className="product-detail-add-to-chart">Add to chart</div>
+              <div onClick={this.onClickBuy} className="product-detail-add-to-chart">Add to cart</div>
+
             </div>
           </div>
         </div>

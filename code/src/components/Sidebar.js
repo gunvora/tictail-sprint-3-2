@@ -4,7 +4,6 @@ import "./Sidebar.css"
 
 class Sidebar extends React.Component {
   onClick = (category) => {
-
   }
 
   render() {

@@ -1,6 +1,6 @@
 import React from "react"
 
-
+import PageTitle from './PageTitle'
 class About extends React.Component {
 
 
@@ -8,7 +8,7 @@ class About extends React.Component {
 
     return (
 
-      <div>Page about</div>
+      <div><PageTitle titelPåSidan="About this shop" underRubrik="Min fina butik" siffra1={199} siffra2={20}/></div>
 
         )
   }
